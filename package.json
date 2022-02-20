@@ -1,0 +1,29 @@
+{
+  "name": "authorization",
+  "version": "1.0.0",
+  "description": "Membuat program Auth sederhana dengan express",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/withraja/authorization.git"
+  },
+  "author": "Raja Ikhsan Halomoan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/withraja/authorization/issues"
+  },
+  "homepage": "https://github.com/withraja/authorization#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "pg": "^8.7.3",
+    "sequelize": "^6.16.2",
+    "uuid": "^8.3.2"
+  }
+}

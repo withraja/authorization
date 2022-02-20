@@ -1,0 +1,33 @@
+<%- include('./layouts/header.ejs') %> 
+
+<body>
+    <h1>Hai Admin</h1>
+    <div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Email</th>
+          <th scope="col">Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(let i = 0; i < data.length; i++) { %>
+        <tr>
+          <td><%= data[i].email %></td>
+          <td>
+            <a
+              href="/users/admin/<%= data[i].id %>/delete"
+              class="btn btn-danger"
+              >Hapus</a
+            >
+          </td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+  <button href="/users/logout" class="btn btn-info"></button>
+    </form>
+  </body>
+
+<%- include('./layouts/footer.ejs') %>

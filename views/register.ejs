@@ -1,0 +1,21 @@
+<%- include('./layouts/header.ejs') %> 
+
+<body>
+    <h1>Selamat Datang di Authentication App</h1>
+    <h3>Silahkan Daftar</h3>
+        <form id="register" method="post" action="/users/register">
+          <div class="mb-3">
+            <label for="Email">Alamat Email</label>
+            <input id="Email" type="email" class="form-control" name="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" class="form-control" placeholder="Masukkan Password" required />
+          </div>
+          <button id="submit" type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <a id="button-login" href="/users/login" class="btn btn-light">Login</a>
+      </section>
+  </body>
+
+<%- include('./layouts/footer.ejs') %>
