@@ -16,6 +16,7 @@ class userController {
 
 
   static async register(req, res) {
+    try {
     const data = {
       id: uuid.v4(),
       email: req.body.email,
@@ -31,7 +32,10 @@ class userController {
         errors.push(el.message);
       });
       res.redirect(`users/register?error=${errors}`);
-    }
+    }   
+  } catch (error) {
+     console.log(error) 
+  }
   }
 
 
