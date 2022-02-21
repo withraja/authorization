@@ -4,6 +4,7 @@
   "description": "Membuat program Auth sederhana dengan express",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "repository": {
